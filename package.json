@@ -1,0 +1,59 @@
+{
+	"name": "cpp-getter-setter-generator",
+	"displayName": "C++ Getter/Setter Generator",
+	"description": "Create getters and setters for C++ automatically!",
+	"icon": "images/logo.png",
+	"publisher": "Julee",
+	"author": {
+		"name": "Julee"
+	},
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.cppGenerateGetterSetter"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.cppGenerateGetterSetter",
+				"title": "Cpp Generate Getter Setter"
+			},
+			{
+				"command": "extension.cppGenerateGetter",
+				"title": "Cpp Generate Getter"
+			}, 
+			{
+				"command": "extension.cppGenerateSetter",
+				"title": "Cpp Generate Setter"
+			}
+		]
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test",
+		"deploy": "vsce package && vsce publish"
+	},
+	"devDependencies": {
+		"typescript": "^3.6.4",
+		"vscode": "^1.1.36",
+		"eslint": "^5.13.0",
+		"@types/node": "^12.11.1",
+		"@types/mocha": "^5.2.7"
+	},
+	"license": "SEE LICENSE IN LICENSE.txt",
+	"bugs": {
+		"url": "https://github.com/julee/cpp-getter-setter-generator/issues",
+		"email": "lukas.gabsi@gmail.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/julee/cpp-getter-setter-generator"
+	},
+	"homepage": "https://github.com/julee/cpp-getter-setter-generator"
+}
