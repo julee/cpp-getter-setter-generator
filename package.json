@@ -3,7 +3,7 @@
 	"displayName": "C++ Getter/Setter Generator",
 	"description": "Create getters and setters for C++ automatically!",
 	"icon": "images/logo.png",
-	"publisher": "Julee",
+	"publisher": "JuleeSan",
 	"author": {
 		"name": "Julee"
 	},
@@ -27,7 +27,7 @@
 			{
 				"command": "extension.cppGenerateGetter",
 				"title": "Cpp Generate Getter"
-			}, 
+			},
 			{
 				"command": "extension.cppGenerateSetter",
 				"title": "Cpp Generate Setter"
